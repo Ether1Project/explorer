@@ -36,10 +36,10 @@ Basic settings:
     "patch":        true,
     "patchBlocks":  100,
     "settings": {
-        "symbol": "ETC",
-        "name": "Ethereum Classic",
-        "title": "Ethereum Classic Block Explorer",
-        "author": "Elaine"
+        "symbol": "ETHO",
+        "name": "Ether-1",
+        "title": "Ether-1 Block Explorer",
+        "author": ""
     }
 }
 
