@@ -7,12 +7,13 @@
     <!-- BEGIN HEAD -->
     <head>
         <title data-ng-bind="'<%= settings.name %> | ' + $state.current.data.pageTitle"></title>
+        <meta name="description" content="Welcome to the Ether-1 Blockchain Explorer. Ether-1 (ETHO) is a completely decentralized crytocurrency network utlizing Masternodes and Service Nodes for network security and stability. The Ether-1 node network is the backbone to a future end-to-end decentralized online experience delivering any content you desire."> 
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="<%= settings.title %>" name="description"/>
         <meta content="<%= settings.author %>" name="author" />
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+        <link rel="icon" href="https://ether1.org/favicon.ico">
 
         <base href="/">
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
@@ -22,6 +23,16 @@
         <link href="/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
         <link href="/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+         
+        <link href="https://ether1.org/css/calendar.css" rel="stylesheet">
+        <link href="https://ether1.org/css/font-awesome.css" rel="stylesheet">
+        <link href="https://ether1.org/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap theme -->
+        <link href="https://ether1.org/css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="https://ether1.org/css/style.css" rel="stylesheet">
+
+
+
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN DYNAMICALLY LOADED CSS FILES(all plugin and page related styles must be loaded between GLOBAL and THEME css files ) -->
         <link id="ng_load_plugins_before" />

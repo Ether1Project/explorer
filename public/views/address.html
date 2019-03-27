@@ -1,27 +1,35 @@
 <!-- BEGIN PAGE CONTENT-->
+<div class="page-title">
+        <h1>
+            <span data-ng-bind="$state.current.data.pageTitle" style="color:#0d0d0d;"></span>
+            <small data-ng-bind="$state.current.data.pageSubTitle" style="color:#97084f;"></small>
+          <!--  <span data-ng-bind="$state.current.data.pageSubTitle" style="color:#97084f;"></span>-->
+        </h1>
+    </div>
+
 <div class="row">
   <div class="col-md-12 portlet light">
-      <div class="portlet-title">
+     <!-- <div class="portlet-title">
         <div class="caption"><span ng-show="addr.isContract">Contract </span>Overview</div>
-      </div>
+      </div>-->
       <div class="portlet-body">
         <div class="row">
             <div class="col-md-6 center">
               <div >
                 <span class="eth-stat-title">
                   {{ addr.balance | number: 10 }} </span><br>
-                <span class="eth-stat-text">
-                  {{ settings.symbol }} Balance <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Note: Balance may not reflect transaction data if you have transactions resulting from Contract Internal Transactions. We are working on adding that functionality."></i>
+                <span class="eth-stat-text" style="color:#97084f;">
+                  {{ settings.symbol }} Balance
                   </span><br> 
-                  <div class="margin-top-20">
+                 <!-- <div class="margin-top-20">
                   <span class="fade">{{ addr.ethfiat | number: 10 }}</span> <span class="eth-stat-text fade">ETH-F balance
                   </span> <a href="http://etherscan.io/address/{{addrHash}}" target="_blank"><i class="fa fa-external-link"></i></a>
-                  </div>
-                  <div class="margin-top-20">
+                  </div>-->
+                 <!-- <div class="margin-top-20">
                   {{ addr.mined }} <span class="eth-stat-text">Mined</span>
-                  </div>
+                  </div>-->
                   <div class="margin-top-20">
-                  {{ addr.count }} <span class="eth-stat-text">Transactions</span>
+                  {{ addr.count }} <span class="eth-stat-text" style="color:#97084f;">Transactions</span>
                   </div>
               </div>
             </div>
@@ -30,12 +38,12 @@
                 <div class="portlet">
                   <div class="portlet-body">
 
-                    <span class='btn blue-madison' ng-show="!isFollowing(addrHash)" ng-click="follow(addrHash)">WATCH <i class="fa fa-rss "></i></span>
+                <!--    <span class='btn blue-madison' ng-show="!isFollowing(addrHash)" ng-click="follow(addrHash)">WATCH <i class="fa fa-rss "></i></span>
                     <span class='btn grey'  ng-show="isFollowing(addrHash)" ng-click="unFollow(addrHash)">WATCHING <i class="fa fa-check "></i></span>
                     <div class="margin-top-20">
                         {{ addr.follow_count }}0 
                         <span class="eth-stat-text">WATCHING</span>
-                    </div>
+                    </div>-->
                 </div>
               </div>
             </div>

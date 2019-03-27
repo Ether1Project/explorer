@@ -49,7 +49,7 @@
     border: 0;
     padding: 0;
     height: 126px;
-    background-image: none;
+    background-image: linear-gradient(#1a1a1a, #0d0d0d 60%, #000000);
 }
 
 .page-header:after,.page-header:before {
@@ -374,7 +374,7 @@
 }
 
 .page-header .page-header-top .top-menu .navbar-nav>li.dropdown-tasks .dropdown-menu .dropdown-menu-list>li .task .percent {
-    color: #36c6d3;
+    color: #97084f;
     float: right;
     font-weight: 600;
     display: inline-block;
@@ -1383,7 +1383,7 @@ body,html {
 }
 
 .theme-panel .theme-colors>li.theme-color.theme-color-green-haze .theme-color-view {
-    background: #44B6AE;
+    background: #97084f;
 }
 
 .theme-panel .theme-colors>li.theme-color.theme-color-purple-plum .theme-color-view {
